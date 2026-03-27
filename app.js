@@ -5,12 +5,16 @@ function changeCharacter(type) {
 
   const img = document.getElementById("character");
 
-  if (type === "human") {
+  if (type === "human１") {
     img.src = "images/human1.png";
   }
 
-  if (type === "space") {
+  if (type === "space１") {
     img.src = "images/space1.png";
+  }
+  
+    if (type === "space") {
+    img.src = "images/ｆｉｓｈ1.png";
   }
 }
 
