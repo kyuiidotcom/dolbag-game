@@ -10,17 +10,22 @@
 <h1>dolbag game</h1>
 
 <div id="game">
-  <img id="character" src="images/human1.png">
+  <!-- 캐릭터 -->
+  <img id="character" src="images/human1.jpg">
 
+  <!-- 아이템 -->
   <div id="items">
-    <img src="images/hat1.png" onclick="equipItem('hat')">
+    <img src="images/hat1.jpg" onclick="equipItem('hat1')">
     <img src="images/glasses.png" onclick="equipItem('glasses')">
-    <img src="images/helmet1.png" onclick="equipItem('helmet')">
+    <img src="images/helmet1.jpg" onclick="equipItem('helmet1')">
   </div>
 </div>
 
+<!-- 캐릭터 변경 -->
 <button onclick="changeCharacter('human1')">인간</button>
 <button onclick="changeCharacter('space1')">우주인</button>
+<button onclick="changeCharacter('fish1')">물고기</button>
+<button onclick="changeCharacter('bear1')">곰</button>
 
 <script src="app.js"></script>
 
