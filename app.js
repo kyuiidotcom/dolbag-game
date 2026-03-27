@@ -1,4 +1,4 @@
-let currentCharacter = "human";
+let currentCharacter = "human1";
 
 function changeCharacter(type) {
   currentCharacter = type;
