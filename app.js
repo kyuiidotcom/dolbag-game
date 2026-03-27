@@ -11,3 +11,7 @@ function addItem(src) {
 
   canvas.appendChild(img);
 }
+function setCharacter(src) {
+  const canvas = document.getElementById("canvas");
+  canvas.innerHTML = `<img src="images/${src}" width="200" style="position:absolute; left:100px; top:200px;">`;
+}
