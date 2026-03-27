@@ -1,22 +1,60 @@
 body {
+  margin: 0;
+  padding: 0;
   text-align: center;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #111;
   color: white;
 }
 
-#game {
-  position: relative;
-  display: inline-block;
+/* 제목 */
+h1 {
   margin-top: 20px;
 }
 
-#character {
-  width: 300px;
+/* 게임 영역 */
+#game {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
 }
 
+/* 캐릭터 이미지 */
+#character {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 아이템 영역 */
+#items {
+  margin-top: 20px;
+}
+
+/* 아이템 이미지 */
 #items img {
   width: 60px;
   margin: 10px;
   cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* 마우스 올렸을 때 */
+#items img:hover {
+  transform: scale(1.2);
+}
+
+/* 버튼 */
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #555;
 }
