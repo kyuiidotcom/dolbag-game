@@ -13,8 +13,12 @@ function changeCharacter(type) {
     img.src = "images/space1.png";
   }
   
-    if (type === "space") {
-    img.src = "images/ｆｉｓｈ1.png";
+    if (type === "fish1") {
+    img.src = "images/fish1.png";
+  }
+  
+      if (type === "bear1") {
+    img.src = "images/bear1.png";
   }
 }
 
