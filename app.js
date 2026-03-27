@@ -28,3 +28,11 @@ const characters = [
   { id: 9, name: "우주인_남", type: "space", season: "none" },
   { id: 10, name: "우주인_여", type: "space", season: "none" }
 ];
+
+function selectCharacter(id) {
+  const character = characters.find(c => c.id === id);
+
+  document.getElementById("mainImage").src =
+    "images/" + character.name + ".png";
+}
+
