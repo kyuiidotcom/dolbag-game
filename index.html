@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <title>dolbag Game</title>
+  <meta charset="UTF-8">
+  <title>Dolbag Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>dolbag Creator</h2>
-<button onclick="setCharacter('human.png')">Human</button>
-<button onclick="setCharacter('astro.png')">Astronaut</button>
-<div id="canvas"></div>
+<h1>Dolbag Game</h1>
 
-<div id="menu">
-  <button onclick="addItem('ameba.png')">아메바</button>
-  <button onclick="addItem('lumimi.png')">루미미</button>
+<div id="game">
+  <img id="character" src="images/human1.png">
+
+  <div id="items">
+    <img src="images/hat.png" onclick="equipItem('hat')">
+    <img src="images/glasses.png" onclick="equipItem('glasses')">
+    <img src="images/helmet.png" onclick="equipItem('helmet')">
+  </div>
 </div>
+
+<button onclick="changeCharacter('human')">인간</button>
+<button onclick="changeCharacter('space')">우주인</button>
 
 <script src="app.js"></script>
 
 </body>
 </html>
-
-<img id="mainImage" src="images/spring_male.png">
-
-<button onclick="selectCharacter(1)">봄 남</button>
-<button onclick="selectCharacter(9)">우주인</button>
-
-<div id="character">
-  <img src="human.png">
-  <img src="hat.png">
-</div>
